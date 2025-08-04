@@ -1,4 +1,4 @@
-# My Chrome Extension
+# Chrome Extension for Nordcraft
 
 This project is a Chrome extension for Nordcraft that provides various functionalities. It allows users to capture data from websites and manipulate website content.
 
