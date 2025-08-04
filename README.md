@@ -12,6 +12,7 @@ This project is a Chrome extension for Nordcraft that provides various functiona
 
 ## Nordcraft package url
 
+- https://codelution_chrome_extension.toddle.site/
 
 
 
