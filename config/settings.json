@@ -1,7 +1,7 @@
 {
   "sidebar": {
     "title": "Codelution Assistant v2",
-    "iframeSrc": "https://add-functions-codelution_chrome_extension.toddle.site/",
+    "iframeSrc": "https://codelution_chrome_extension.toddle.site/",
     "defaultWidth": "400px",
     "mobileWidthPercent": 85
   },
