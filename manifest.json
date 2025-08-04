@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Codelution Chrome Extension for Nordcraft",
+  "version": "1.0",
+  "description": "A Chrome extension for Nordcraft that captures website data, enables user interactions, and manipulates web content.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/utils/split.min.js", "src/sidebar/sidebar.html", "src/sidebar/sidebar.js", "src/sidebar/sidebar.css", "config/settings.json"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
